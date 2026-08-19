@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base transitions for theme switching */
+html {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: #0d120e;
+}
+
+/* Night Mode (الوضع الليلي) Enhanced Eye-Comfort Styles */
+.dark {
+  --bg-primary: #0d120e;
+  --bg-card: #141b16;
+  --bg-card-subtle: #19221c;
+  --bg-input: #121813;
+  --border-color: #243327;
+  --border-accent: #3a533f;
+  --text-primary: #ece8df;
+  --text-secondary: #9aa99c;
+  --brand-green: #4da638;
+  --brand-gold: #dfbe5b;
+}
+
+.dark body {
+  background-color: #0d120e;
+  color: #ece8df;
+}
+
+/* Night mode automated soft adaptations for cards and widgets */
+.dark .bg-white {
+  background-color: #141b16 !important;
+  color: #ece8df;
+}
+
+.dark .bg-\[\#FDFBF7\],
+.dark .bg-\[\#F8F6F0\],
+.dark .bg-gray-50,
+.dark .bg-gray-50\/50,
+.dark .bg-gray-100 {
+  background-color: #19221c !important;
+  color: #ece8df;
+}
+
+.dark .border-\[\#E5E2D9\],
+.dark .border-gray-200,
+.dark .border-gray-100 {
+  border-color: #243327 !important;
+}
+
+.dark .text-\[\#1A1A1A\],
+.dark .text-gray-900,
+.dark .text-gray-800 {
+  color: #ece8df !important;
+}
+
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500 {
+  color: #9aa99c !important;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #121813 !important;
+  border-color: #2b3d2f !important;
+  color: #ece8df !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #6b7d6e !important;
+}
+
+.dark hr {
+  border-color: #243327 !important;
+}
+
+/* Hadith / Quote prominent Box in Night Mode */
+.dark .hadith-quote-box {
+  background-color: #111a13 !important;
+  border-color: #3b5a40 !important;
+}
+
+.dark .hadith-quote-box p {
+  color: #97d48d !important;
+}
+
+/* Interactive elements in dark mode */
+.dark button:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+/* Custom smooth dark scrollbar */
+.dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #101611;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #283a2c;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #39523e;
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "Salaat Tracker",
+  "description": "A beautifully designed daily prayer and Quran tracker with Night Mode for eye-comfort late-night tracking, official prayer times calculation, daily browser notification reminders for Fajr, Dhuhr, Asr, Maghrib, and Isha, offline schedule download, logging weekly/monthly progress, streak counting, and visual statistics.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
